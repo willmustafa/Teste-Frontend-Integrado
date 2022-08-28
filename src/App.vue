@@ -3,7 +3,12 @@ import MainNavbar from "./components/layout/MainNavbar.vue";
 </script>
 
 <template>
-  <MainNavbar />
+  <div>
+    <MainNavbar />
+    <transition>
+      <router-view />
+    </transition>
+  </div>
 </template>
 
 <style scoped></style>

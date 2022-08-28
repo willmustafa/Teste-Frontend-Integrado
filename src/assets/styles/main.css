@@ -11,6 +11,10 @@ img, svg {
     vertical-align: middle;
 }
 
+main{
+    margin-top: 2.5rem;
+}
+
 .container{
     width: 100%;
     padding-right: 0.75rem;

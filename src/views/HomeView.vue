@@ -2,6 +2,8 @@
 
 <template>
   <main>
-    <TheWelcome />
+    <div class="container">home</div>
   </main>
 </template>
+
+<style scoped></style>
