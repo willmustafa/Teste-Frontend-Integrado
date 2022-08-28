@@ -1,7 +1,9 @@
-<script setup></script>
+<script setup>
+import MainNavbar from "./components/layout/MainNavbar.vue";
+</script>
 
 <template>
-  <h1>App</h1>
+  <MainNavbar />
 </template>
 
 <style scoped></style>
