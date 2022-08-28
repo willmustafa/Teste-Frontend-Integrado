@@ -1,0 +1,15 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:300,400,700&display=swap');
+
+/* Cores */
+:root{
+    --primary: rgb(32, 134, 9);
+    --primary-light: rgb(46, 211, 7);
+    --secondary: rgb(135, 148, 138);
+
+    --background: rgb(48, 55, 59);
+    --background-dark: rgb(50, 49, 50);
+    --background-darker: rgb(38, 43, 45);
+
+    --font-primary: "Poppins", sans-serif;
+}
