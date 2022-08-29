@@ -1,48 +1,13 @@
-# teste-integrado
+# Teste de Frontend da Integra.do
 
-This template should help get you started developing with Vue 3 in Vite.
+Site desenvolvido em Vue.js 2, com esquema de cores e fontes disponibilizados pelo painel v4.
 
-## Recommended IDE Setup
+Conforme requisitado, o site disponibiliza uma tabela com leads de clientes onde é possível filtrá-los.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Como o tempo para a execução foi curto, não implementei loadings, mock data, fetch na API com queries do input, etc.
 
-## Customize configuration
+## Instalação
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Primeiramente utilize o `npm install` e depois o `npm run dev` para rodar em sua máquina, ou o comando `npm run build` para compilar o projeto.
 
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
-
-```sh
-npm run build
-npm run test:e2e # or `npm run test:e2e:ci` for headless testing
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+![](_resources/screenshot.png?raw=true)
