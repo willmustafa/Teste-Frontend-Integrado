@@ -10,10 +10,18 @@
     <tbody>
       <tr>
         <th scope="col" v-for="(item, index) in itens" v-bind:key="index">
-          <input type="text" :name="item.item" v-on:input="filterData" />
+          <input
+            type="text"
+            :name="item.item"
+            v-on:input="filterData"
+            value=""
+          />
         </th>
       </tr>
-      <tr v-for="(item, index) in dataFetched.data" v-bind:key="index">
+      <tr
+        v-for="(item, index) in filteredData ? filteredData : dataFetched"
+        v-bind:key="index"
+      >
         <th scope="row" v-for="(itemName, index) in itens" v-bind:key="index">
           {{ getPropertyFromObject(item, itemName.item) }}
         </th>
@@ -27,7 +35,7 @@ export default {
   props: ["dataFetched", "itens"],
   data() {
     return {
-      filteredData: null,
+      filteredData: this.$props.dataFetched,
     };
   },
   methods: {
@@ -37,8 +45,20 @@ export default {
         : obj[item];
     },
     filterData(event) {
-      const filterValue = event.target.name;
-      console.log(this.getPropertyFromObject(this.data, filterValue));
+      const filterBy = event.target.name;
+      const filteredValue = event.target.value.toLowerCase();
+      let obj = null;
+      if (filteredValue) {
+        obj = this.$props.dataFetched.filter((el) =>
+          this.getPropertyFromObject(el, filterBy)
+            .toLowerCase()
+            .includes(filteredValue)
+        );
+      } else {
+        obj = this.$props.dataFetched;
+      }
+
+      this.filteredData = obj;
     },
   },
 };

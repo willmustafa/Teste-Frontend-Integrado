@@ -28,14 +28,13 @@ export default {
     };
   },
   created() {
-    this.$watch(() => this.fetchData(), { immediate: true });
+    this.fetchData();
   },
   methods: {
     async fetchData() {
       await axios
         .get("https://jsonplaceholder.typicode.com/users")
-        .then((res) => (this.data = res))
-        .catch((res) => console.log(res));
+        .then((res) => (this.data = res.data));
     },
   },
   components: { CardContainer, TableStriped },

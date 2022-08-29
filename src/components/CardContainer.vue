@@ -7,12 +7,14 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "CardContainer",
+};
 </script>
 
 <style scoped>
 .card {
-  background-color: white;
+  background-color: var(--background-darker);
   padding: 2rem;
   border-radius: var(--radius);
 }
