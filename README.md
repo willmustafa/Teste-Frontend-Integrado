@@ -2,6 +2,8 @@
 
 Site desenvolvido em Vue.js 2, com esquema de cores e fontes disponibilizados pelo painel v4.
 
+O site pode ser instalado localmente ou acessado pelo [link](https://teste-frontend-integrado.pages.dev/)
+
 Conforme requisitado, o site disponibiliza uma tabela com leads de clientes onde é possível filtrá-los.
 
 Como o tempo para a execução foi curto, não implementei loadings, mock data, fetch na API com queries do input, etc.
